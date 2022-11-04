@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos and Audio </title>
+</head>
+<body>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+    }
+    body{
+      background-image:  url('https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGdyYXBoaWN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+.tab {
+  overflow: hidden;
+  border: 2px solid rgb(0, 195, 255);
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: rgb(0, 204, 255);
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+#vid{
+  padding: 20px; 
+  display: flex;
+  flex-direction:'row';
+  justify-content:'space-around'
+}
+#vid .card{
+  margin-left: 20px;
+}
+@media screen and (max-width: 1260px) {
+  #vid {
+    flex-direction: column;
+  }
+}
+
+</style>
+</head>
+<body>
+<br>
+<div style="text-align: center;">
+<h1>Videos and Audios Section</h1>
+<em>Some of the content are in video or audio form</em>
+</div>
+<br>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')">Sunday Sermon</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Tuesday Bible Studies</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Thursday Prayers</button>
+  <button class="tablinks" onclick="openCity(event, 'Huawei')">Other Events</button>
+</div>
+
+<div id="London" class="tabcontent">
+  <h3>Sunday Sermon</h3>
+  <div id="vid">
+    <div class="card" style="padding: '10px';text-align:'center'; margin-bottom:'10px'">
+      <iframe  height="315" src="https://www.youtube.com/embed/og3gOP30cR8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    <div class="card" style="padding: '10px';text-align:'center'; margin-bottom:'10px'">
+      <iframe  height="315" src="https://www.youtube.com/embed/WDaxTjTHB_s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+  </div>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Tuesday Bible Studies</h3>
+  <p>Content coming soon</p> 
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Thursday Prayers</h3>
+  <p>Content coming soon</p>
+</div>
+
+<div id="Huawei" class="tabcontent">
+  <h3>Other Events</h3>
+  <div id="vid">
+  <div class="card" style="padding: '10px';text-align:'center'; margin-bottom:'10px'">
+    <iframe  height="315" src="https://www.youtube.com/embed/bqy5Lm2TsS8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="card" style="padding: '10px';text-align:'center'; margin-bottom:'10px'">
+    <iframe  height="315" src="https://www.youtube.com/embed/DfhP7W9R4lw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="card" style="padding: '10px';text-align:'center'; margin-bottom:'10px'">
+    <iframe  height="315" src="https://www.youtube.com/embed/ZTy1OiQnwYk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="card" style="padding: '10px';text-align:'center'; margin-bottom:'10px'">
+    <iframe  height="315" src="https://www.youtube.com/embed/xTRCrdKoP9c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="card" style="padding: '10px';text-align:'center'; margin-bottom:'10px'">
+    <iframe  height="315" src="https://www.youtube.com/embed/Uqr61zsEp30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+<div id="vid">
+  <div class="card" style="padding: '10px';text-align:'center'; margin-bottom:'10px'">
+    <iframe  height="315" src="https://www.youtube.com/embed/Q5Tu5GEmW5o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+
+</body>
+</html>
